@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration=production --base-href=/ravi-portfolio/ && npx angular-cli-ghpages --dir=dist/ravi-portfolio"
+    "deploy": "ng build --configuration=production --base-href=/ravi-portfolio/ && npx angular-cli-ghpages --dir=dist/ravi-portfolio/browser"
   },
   "private": true,
   "packageManager": "npm@10.8.2",

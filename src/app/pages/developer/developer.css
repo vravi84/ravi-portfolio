@@ -1,0 +1,115 @@
+.developer {
+  max-width: 900px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #94a3b8;
+  max-width: 700px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.tags span:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Projects */
+.project-card {
+  background: rgba(255,255,255,0.04);
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h3 {
+  font-size: 16px;
+}
+
+.time {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Lists */
+ul {
+  padding-left: 18px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* GitHub */
+.github {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.header-row .btn {
+  white-space: nowrap;
+}

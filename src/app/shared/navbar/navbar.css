@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;  /* 👈 LEFT ALIGN */
+  align-items: center;
+  background: #0d1b2a;
+  padding: 15px 30px;
+  margin-top: 10px;
+}
+
+/* remove margin pushing items */
+.links {
+  display: flex;
+  gap: 25px;   /* 👈 better than margin-left */
+}
+
+.links a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: 0.2s;
+}
+
+/* hover color */
+.links a:hover {
+  color: #38bdf8;
+}
+
+/* underline animation */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* active route */
+.links a.active {
+  color: #38bdf8;
+}
+
+.links a.active::after {
+  width: 100%;
+}

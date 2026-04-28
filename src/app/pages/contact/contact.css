@@ -1,0 +1,43 @@
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 200px 0;
+  
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-link i {
+  font-size: 18px;
+}
+
+/* WhatsApp green */
+.whatsapp {
+  color: #25D366;
+}
+
+/* LinkedIn blue */
+.fa-linkedin {
+  color: #0A66C2;
+}
+
+.contact-link:hover {
+  color: #38bdf8;
+  transform: translateY(-2px);
+}
+.github {
+  color: #e2e8f0;
+}
+
+.contact-link:hover .fa-github {
+  color: #ffffff;
+}

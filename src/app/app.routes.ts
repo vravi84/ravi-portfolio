@@ -8,9 +8,10 @@ import {ContactComponent} from './pages/contact/contact'
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '**', redirectTo: '' } ,
   { path: 'teaching', component: TeachingComponent },
   { path: 'developer', component: DeveloperComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '' } ,
+
 ];

@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 40px;
   margin: 200px 0;
-  
+
 }
 
 .contact-link {
@@ -12,7 +12,7 @@
   gap: 8px;
   text-decoration: none;
   color: #e2e8f0;
-  font-size: 16px;
+  font-size: 24px;
   transition: 0.3s;
 }
 
@@ -34,6 +34,7 @@
   color: #38bdf8;
   transform: translateY(-2px);
 }
+
 .github {
   color: #e2e8f0;
 }
@@ -41,9 +42,18 @@
 .contact-link:hover .fa-github {
   color: #ffffff;
 }
+
 @media (max-width: 600px) {
   .contact-row {
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    align-items: baseline;
+  }
+
+  .contact-link {
+    padding-left: 40vw;
+    gap: 10px;
   }
 }

@@ -1,18 +1,22 @@
+/* ================= NAVBAR ================= */
 .navbar {
   display: flex;
-  justify-content: flex-end;  /* 👈 LEFT ALIGN */
+  justify-content: flex-end;
   align-items: center;
   background: #0d1b2a;
   padding: 15px 30px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1100;
 }
 
-/* remove margin pushing items */
+/* ================= LINKS (DESKTOP) ================= */
 .links {
   display: flex;
-  gap: 25px;   /* 👈 better than margin-left */
+  gap: 25px;
 }
 
+/* Links style */
 .links a {
   display: inline-block;
   position: relative;
@@ -21,12 +25,12 @@
   transition: 0.2s;
 }
 
-/* hover color */
+/* Hover */
 .links a:hover {
   color: #38bdf8;
 }
 
-/* underline animation */
+/* Underline */
 .links a::after {
   content: "";
   position: absolute;
@@ -38,31 +42,70 @@
   transition: width 0.3s ease;
 }
 
-.links a:hover::after {
-  width: 100%;
-}
-
-/* active route */
-.links a.active {
-  color: #38bdf8;
-}
-
+.links a:hover::after,
 .links a.active::after {
   width: 100%;
 }
 
-/* responsive */
+.links a.active {
+  color: #38bdf8;
+}
+
+/* ================= HAMBURGER ================= */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
+
+  /* Navbar layout */
   .navbar {
-    padding: 12px 15px;
+    justify-content: space-between;   /* 👈 important */
+    padding: 12px 20px;
   }
 
+  /* SHOW hamburger */
+  .menu-icon {
+    display: block;
+  }
+
+  /* FULL SCREEN MENU */
   .links {
-    flex-wrap: wrap;
-    gap: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(13, 27, 42, 0.98);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+
+    z-index: 1000;
+  }
+
+  /* ACTIVE MENU */
+  .links.active {
+    transform: translateY(0);
   }
 
   .links a {
-    font-size: 14px;
+    font-size: 18px;
   }
+}
+
+/* Smooth animation */
+.links {
+  transition: all 0.3s ease;
 }

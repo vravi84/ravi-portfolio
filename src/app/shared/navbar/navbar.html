@@ -1,9 +1,13 @@
-<nav class="navbar">
-  <div class="links">
-    <a routerLink="/">Home</a>
-    <a routerLink="/teaching">Teaching</a>
-    <a routerLink="/developer">Developer</a>
-    <a routerLink="/projects">Projects</a>
-    <a routerLink="/contact">Contact</a>
+<nav class="navbar" data-aos="fade-left">
+
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
+
+  <div class="links" [class.active]="isOpen">
+    <a routerLink="/" (click)="toggleMenu()">Home</a>
+    <a routerLink="/teaching" (click)="toggleMenu()">Teacher</a>
+    <a routerLink="/developer" (click)="toggleMenu()">Developer</a>
+    <a routerLink="/projects" (click)="toggleMenu()">Projects</a>
+    <a routerLink="/contact" (click)="toggleMenu()">Contact</a>
   </div>
+
 </nav>

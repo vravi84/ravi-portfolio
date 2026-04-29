@@ -46,5 +46,12 @@ h1{
   text-decoration: none;
 }
 
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;   /* 👈 one below one */
+  }
+}
+
 .blue { background: #3b82f6; color: white; }
 .outline { border: 1px solid white; color: white; }

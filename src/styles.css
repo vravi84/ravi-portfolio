@@ -132,6 +132,10 @@ p {
   margin: auto;
   padding: 40px 20px;
 }
+/* for navbar */
+body.menu-open {
+  overflow: hidden;
+}
 
 /* Tablet */
 @media (max-width: 900px) {

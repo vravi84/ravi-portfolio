@@ -79,3 +79,17 @@
   margin: 0 10px;
   color: #64748b;
 }
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+}

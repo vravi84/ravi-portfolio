@@ -113,3 +113,31 @@ ul li {
 .header-row .btn {
   white-space: nowrap;
 }
+@media (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+/* teck stack responsive */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .tags span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+/* project cards */
+@media (max-width: 600px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

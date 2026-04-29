@@ -166,3 +166,14 @@ i {
   justify-content: space-between;
   align-items: center; /* 👈 change this */
 }
+@media (max-width: 900px) {
+  .achievements-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
